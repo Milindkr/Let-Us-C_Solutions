@@ -1,0 +1,42 @@
+/*If the marks obtained by a student in five different subjects are 
+input through the keyboard, write a program to find out the 
+aggregate marks and percentage marks obtained by the student. 
+Assume that the maximum marks that can be obtained by a student 
+in each subject is 100.
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    float first_subject_marks;
+    printf("Enter first Subject marks :");
+    scanf("%f",&first_subject_marks);
+
+    float second_subject_marks;
+    printf("Enter second Subject marks :");
+    scanf("%f",&second_subject_marks);
+
+    float third_subject_marks;
+    printf("Enter third Subject marks :");
+    scanf("%f",&third_subject_marks);
+
+    float fouth_subject_marks;
+    printf("Enter fourth Subject marks :");
+    scanf("%f",&fouth_subject_marks);
+
+    float fift_subject_marks;
+    printf("Enter fift Subject marks :");
+    scanf("%f",&fift_subject_marks);
+
+    float total_marks;
+    total_marks = first_subject_marks+second_subject_marks+third_subject_marks+fouth_subject_marks+fift_subject_marks;
+
+    float aggregate_percentage;
+    aggregate_percentage = total_marks/500*100;
+
+    printf("Total marks obatined = %f \n",total_marks);
+    printf("Aggregate Percentage = %f ",aggregate_percentage);
+
+    return 0;
+}
