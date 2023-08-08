@@ -1,0 +1,33 @@
+/*Ramesh’s basic salary is input through the keyboard. His dearness 
+allowance is 40% of basic salary, and house rent allowance is 20% of 
+basic salary. Write a program to calculate his gross salary.*/
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float basic_salary;
+    printf("Enter Your Basic Salary :");
+    scanf("%f",&basic_salary);
+
+    float allowance;
+    allowance = basic_salary*40/100;
+
+    float rent;
+    rent = basic_salary*20/100;
+
+    float gross_salary;
+    gross_salary = basic_salary+allowance+rent;
+
+    printf("Basic Salaray = %f \n",basic_salary);
+    printf(" Allowance = %f \n",allowance);
+    printf("Rent = %f \n",rent);
+    printf(" Gross Salary = %f \n",gross_salary);
+
+
+
+    getch();
+    return 0;
+}
